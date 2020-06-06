@@ -24,7 +24,7 @@ const StyledBurger = styled.div`
     &:nth-child(1) {
       transform: ${({ open }) => open ? 'rotate(405deg)' : 'rotate(0)'}
     }
-    
+
     &:nth-child(2) {
       /* transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'}; */
       opacity: ${({ open }) => open ? 0 : 1};

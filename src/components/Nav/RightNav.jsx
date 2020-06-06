@@ -12,11 +12,11 @@ const Ul = styled.ul`
   width: 300px;
   padding-top: 3.5rem;
   transition: transform 0.4s ease-in-out;
+  list-style-type: none;
 
   li {
     color: #fff;
     padding: 18px 10px;
-
   }
 `
 const RightNav = ({ open }) => {
