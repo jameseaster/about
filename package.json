@@ -11,7 +11,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1"
   },
-  "homepage": "https://jameseaster.github.io/AboutMe",
+  "homepage": "https://jameseaster.github.io/about",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
