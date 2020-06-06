@@ -2,6 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 import Burger from './Burger';
 
+import dev from '../../icons/dev.png';
+import codewars from '../../icons/codewars.png';
+import github from '../../icons/github.png';
+import linkedin from '../../icons/linkedin.png';
+
 const Nav = styled.nav`
   width: 100%;
   height: 65px;
@@ -27,8 +32,11 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo">
-        Add social media icons here...
+      <div className="logo" style={{}}>
+        <img src={dev} alt="dev" style={{height: '35px', marginRight: '15px'}}/>
+        <img src={codewars} alt="codewars" style={{height: '34px', marginRight: '15px', padding: 3, backgroundColor: '#A8332A', borderRadius: '5px'}}/>
+        <img src={linkedin} alt="linkedin" style={{height: '34px', marginRight: '15px'}}/>
+        <img src={github} alt="github" style={{height: '39px', marginRight: '15px', paddingTop: '3px'}}/>
       </div>
       <Burger />
     </Nav>
