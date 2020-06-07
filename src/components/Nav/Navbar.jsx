@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import Burger from './Burger';
 
-import dev from '../../icons/dev.png';
-import codewars from '../../icons/codewars.png';
-import github from '../../icons/github.png';
-import linkedin from '../../icons/linkedin.png';
+import dev from '../../images/dev.png';
+import codewars from '../../images/codewars.png';
+import github from '../../images/github.png';
+import linkedin from '../../images/linkedin.png';
 
 const Nav = styled.nav`
   position: fixed;
@@ -17,6 +17,7 @@ const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1;
 
   .icon-container {
     padding: 15px 0;
