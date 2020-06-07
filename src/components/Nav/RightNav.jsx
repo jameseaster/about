@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components';
 import { Link } from "react-scroll";
 
+import PDF from '../../images/Resume.pdf'
+
 const Ul = styled.ul`
   flex-flow: column nowrap;
   background-color: #0D2538;
@@ -19,11 +21,19 @@ const Ul = styled.ul`
     color: #fff;
     padding: 18px 30px;
   }
+
+  .resume {
+    color: #fff;
+    text-decoration: none;
+  }
+
   .active {
-    border-bottom: 1px solid #fff;
+    border: 1px solid #fff;
+    padding: 4px;
+    border-radius: 2px;
   }
 `
-const RightNav = ({ open }) => {
+const RightNav = ({ open, closeDrawer }) => {
   return (
     <Ul open={open}>
       <li>
@@ -33,7 +43,8 @@ const RightNav = ({ open }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration= {500}
+          duration={500}
+          onClick={closeDrawer}
         >Home</Link>
       </li>
       <li>
@@ -43,7 +54,8 @@ const RightNav = ({ open }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration= {500}
+          duration={500}
+          onClick={closeDrawer}
         >About</Link>
       </li>
       <li>
@@ -53,7 +65,8 @@ const RightNav = ({ open }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration= {500}
+          duration={500}
+          onClick={closeDrawer}
         >Applications</Link>
       </li>
       <li>
@@ -63,11 +76,12 @@ const RightNav = ({ open }) => {
           spy={true}
           smooth={true}
           offset={0}
-          duration= {500}
+          duration={500}
+          onClick={closeDrawer}
         >Contact</Link>
       </li>
       <li>
-        Resume
+        <a href = {PDF} target = "_blank" className="resume" rel="noopener noreferrer">Resume</a>
       </li>
     </Ul>
   )
