@@ -2,25 +2,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const HomeScreenStyle = styled.div`
+const ContactStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #282c34;
+  background-color: teal;
   height: 100vh;
   color: #fff;
 `
 
-const HomeScreen = () => {
+const Contact = () => {
   return (
-    <HomeScreenStyle id="home">
+    <ContactStyle id="contact">
       <div>
-        <h3>James Easter</h3>
+        <h3>Contact</h3>
       </div>
-    </HomeScreenStyle>
+    </ContactStyle>
   )
 }
 
-export default HomeScreen
+export default Contact
