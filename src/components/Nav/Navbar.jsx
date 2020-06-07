@@ -8,6 +8,8 @@ import github from '../../icons/github.png';
 import linkedin from '../../icons/linkedin.png';
 
 const Nav = styled.nav`
+  position: fixed;
+  background-color: #fff;
   width: 100%;
   height: 65px;
   border-bottom: 2px solid #f1f1f1;
