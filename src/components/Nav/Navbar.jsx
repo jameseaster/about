@@ -16,8 +16,12 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-  .logo {
+  .icon-container {
     padding: 15px 0;
+  }
+
+  img: hover {
+    transform: scale(1.1, 1.1);
   }
 
   /* this might be good to use for the icons */
@@ -32,11 +36,19 @@ const Nav = styled.nav`
 const Navbar = () => {
   return (
     <Nav>
-      <div className="logo" style={{}}>
-        <img src={dev} alt="dev" style={{height: '35px', marginRight: '15px'}}/>
-        <img src={codewars} alt="codewars" style={{height: '34px', marginRight: '15px', padding: 3, backgroundColor: '#A8332A', borderRadius: '5px'}}/>
-        <img src={linkedin} alt="linkedin" style={{height: '34px', marginRight: '15px'}}/>
-        <img src={github} alt="github" style={{height: '39px', marginRight: '15px', paddingTop: '3px'}}/>
+      <div className="icon-container">
+        <a href="https://dev.to/jameseaster" target="_blank" rel="noopener noreferrer">
+          <img src={dev} alt="dev" style={{height: '38px', marginRight: '15px'}}/>
+        </a>
+        <a href="https://www.codewars.com/users/jameseaster" target="_blank" rel="noopener noreferrer">
+          <img src={codewars} alt="codewars" style={{height: '34px', marginRight: '15px', marginBottom: '2px', padding: 3, backgroundColor: '#A8332A', borderRadius: '5px'}}/>
+        </a>
+        <a href="https://www.linkedin.com/in/jameseaster-dev/" target="_blank" rel="noopener noreferrer">
+          <img src={linkedin} alt="linkedin" style={{height: '34px', marginRight: '15px', marginBottom: '2px'}}/>
+        </a>
+        <a href="https://github.com/jameseaster" target="_blank" rel="noopener noreferrer">
+          <img src={github} alt="github" style={{height: '39.4px', marginRight: '15px', marginBottom: '-0.7px'}}/>
+        </a>
       </div>
       <Burger />
     </Nav>
