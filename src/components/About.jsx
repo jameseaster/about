@@ -19,22 +19,18 @@ const AboutStyle = styled.div`
   padding-left: 100px;
   padding-right: 100px;
 
-  ul {
-    margin-top: 30px;
-    list-style-type: none;
-    columns: 2;
-    /* -webkit-columns: 2;
-    -moz-columns: 2; */
-
-    li {
-      margin: 0px 30px 30px 0px;
-    }
-  }
-  .header {
+  .title {
+    padding: 50px;
     @media (max-width: 969px) {
       padding: 50px;
     }
   }
+
+  .subtitle {
+    min-width: 300px;
+    text-align: center;
+  }
+
   .body-container {
     flex-direction: row;
     display: flex;
@@ -46,15 +42,19 @@ const AboutStyle = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      text-align: left;
+      text-align: center;
     }
   }
   }
+
   .container-left {
     flex: 2;
-    padding-left: 50px;
-    padding-right: 50px;
+    @media (min-width: 969px) {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
+
   .container-right {
     flex: 1;
     padding: 50px;
@@ -62,59 +62,67 @@ const AboutStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 969px) {
+      padding: 0px 0px 50px 0px;
+    }
   }
-  .paragraph-container-1 {
-    margin-bottom: 60px;
+
+  .paragraph-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    min-width: 325px;
   }
-  .paragraph-container-2 {
-    /* margin-bottom: 50px; */
-  }
-  .img {
-    width: 300px;
+
+  .tech-container {
+    flex: 1;
+    min-width: 390px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
+  }
+
+  .img {
+    width: 350px;
   }
 `
 
 const About = () => {
   return (
     <AboutStyle id="about" >
-      <h3 className='header'>About</h3>
+      <h3 className='title'>About</h3>
+      <h4  className='subtitle'>
+        Hello! I am a software engineer based in New Orleans, LA.
+      </h4>
       <div className="body-container">
-      <div className="container-left">
-        <div className='paragraph-container-1'>
-          <h4>Add a personal narrative</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Fusce odio quam, pellentesque ac finibus nec, auctor dignissim
-            diam. Nam placerat porta efficitur. Quisque blandit erat non
-            ultrices lacinia.
-          </p>
+        <div className="container-left">
+          <div className='paragraph-container'>
+            <p>
+              I love developing applications that solve problems for other people.
+              I’m always interested in diving into new software engineering technologies
+              that allow for more efficient and effective work flow.
+            </p>
+          </div>
+          <div className='paragraph-container'>
+            <p>
+              Recently, I have been working in JavaScript specifically utilizing
+              React Native & Redux to build mobile applications. I see both mobile and
+              web applications as an awesome opportunity to connect with people and
+              add value to their daily life.
+            </p>
+          </div>
         </div>
-        <div className='paragraph-container-2'>
-          <h4>Add a professional narrative</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Fusce odio quam, pellentesque ac finibus nec, auctor dignissim
-            diam. Nam placerat porta efficitur. Quisque blandit erat non
-            ultrices lacinia.
-          </p>
-        </div>
-      </div>
-      <div className="container-right">
+        <div className="container-right">
         <img src={laptop} className='img' alt='laptop'></img>
-        <h4>Add technologies</h4>
-          <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-            <li>item 4</li>
-            <li>item 5</li>
-            <li>item 6</li>
-            <li>item 7</li>
-            <li>item 8</li>
-          </ul>
         </div>
       </div>
+        <div className='tech-container'>
+            <h4>Technologies</h4>
+          <p>React · React Native · Redux · Socket.IO · GoogleAuth</p>
+          <p>Node.js · Feathers · Express · MariaDB · MongoDB</p>
+          <p>JavaScript · HTML · CSS · AWS · Heroku</p>
+          </div>
     </AboutStyle>
   )
 }
