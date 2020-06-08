@@ -53,7 +53,7 @@ const RightNav = ({ open, closeDrawer }) => {
           to="about"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
           onClick={closeDrawer}
         >About</Link>
@@ -64,7 +64,7 @@ const RightNav = ({ open, closeDrawer }) => {
           to="applications"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
           onClick={closeDrawer}
         >Applications</Link>
@@ -75,7 +75,7 @@ const RightNav = ({ open, closeDrawer }) => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={0}
+          offset={-50}
           duration={500}
           onClick={closeDrawer}
         >Contact</Link>
