@@ -10,15 +10,30 @@ const AboutStyle = styled.div`
   justify-content: center;
   text-align: left;
   background-color: teal;
-  height: 100vh;
+  @media screen
+    and (min-device-width: 1200px)
+    and (max-device-width: 1600px) {
+    min-height: 100vh;
+  }
   color: #fff;
   padding-left: 100px;
   padding-right: 100px;
 
   ul {
+    margin-top: 30px;
+    list-style-type: none;
     columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    /* -webkit-columns: 2;
+    -moz-columns: 2; */
+
+    li {
+      margin: 0px 30px 30px 0px;
+    }
+  }
+  .header {
+    @media (max-width: 969px) {
+      padding: 50px;
+    }
   }
   .body-container {
     flex-direction: row;
@@ -26,14 +41,27 @@ const AboutStyle = styled.div`
     align-items: center;
     justify-content: center;
     text-align: left;
+    @media (max-width: 969px) {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: left;
+    }
+  }
   }
   .container-left {
     flex: 2;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   .container-right {
     flex: 1;
     padding: 50px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .paragraph-container-1 {
     margin-bottom: 60px;
@@ -50,7 +78,7 @@ const AboutStyle = styled.div`
 const About = () => {
   return (
     <AboutStyle id="about" >
-      <h3>About</h3>
+      <h3 className='header'>About</h3>
       <div className="body-container">
       <div className="container-left">
         <div className='paragraph-container-1'>
@@ -73,19 +101,19 @@ const About = () => {
         </div>
       </div>
       <div className="container-right">
-        <img src={laptop} className='img'></img>
-      <h4>Add technologies</h4>
-        <ul>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
-          <li>item 4</li>
-          <li>item 5</li>
-          <li>item 6</li>
-          <li>item 7</li>
-          <li>item 8</li>
-        </ul>
-      </div>
+        <img src={laptop} className='img' alt='laptop'></img>
+        <h4>Add technologies</h4>
+          <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+            <li>item 5</li>
+            <li>item 6</li>
+            <li>item 7</li>
+            <li>item 8</li>
+          </ul>
+        </div>
       </div>
     </AboutStyle>
   )
