@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import laptop from '../images/coffee.jpeg'
+import howdy from '../images/howdy/howdy_1.png';
+import flourish from '../images/flourish/flourish_1.PNG';
 
 const ApplicationsStyle = styled.div`
   display: flex;
@@ -19,15 +20,14 @@ const ApplicationsStyle = styled.div`
 
   .header {
     margin-top: 50px;
-    margin-bottom: 25px;
   }
   .app-container {
     flex-direction: row;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
-    @media (max-width: 969px) {
+    margin: 40px 0px 40px;
+    @media (max-width: 900px) {
       flex-direction: column;
       display: flex;
       align-items: center;
@@ -36,40 +36,59 @@ const ApplicationsStyle = styled.div`
     }
   }
   .img {
-    width: 400px;
-    margin-bottom: 20px;
+    width: 500px;
+    border-radius: 4px;
+    padding-left: 100px;
+    @media (max-width: 900px) {
+      width: 400px;
+      padding-left: 0px;
+    }
+    @media (max-width: 525px) {
+      width: 300px;
+    }
   }
+  .flourish {
+    width: auto;
+    max-height: 400px;
+  }
+
   .app-text {
     flex: 1;
     flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: 10%;
-    @media (min-width: 969px) {
-      margin: 5% 10% 5% 0%;
+    margin: 0% 10% 0% 2%;
+    @media (max-width: 900px) {
+      max-width: 400px;
+      margin: 0% 2% 0% 2%;
     }
+
     a {
       text-decoration: none;
       color: #fff;
       font-size: small;
       font-style: italic;
     }
+
     a:hover {
       color: dodgerblue;
     }
   }
+
   .app-img {
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (min-width: 969px) {
-      padding: 5% 0% 5% 10%;
+    margin: 0% 2% 0% 5%;
+    @media (max-width: 900px) {
+      margin: 0% 2% 0% 2%;
     }
   }
+
   .app-img:hover {
-    filter: brightness(130%);
+    filter: brightness(50%);
   }
 `
 
@@ -79,8 +98,8 @@ const Applications = () => {
       <h3 className='header'>Applications</h3>
       <div className="app-container">
         <div className='app-img'>
-          <a href="https://github.com/Team-GreenDev/flourish" target="_blank" rel="noopener noreferrer">
-            <img src={laptop} className='img' alt='laptop'></img>
+          <a href="https://youtu.be/K9k9t54Spxc" target="_blank" rel="noopener noreferrer">
+            <img src={flourish} className='img flourish' alt='flourish'></img>
           </a>
         </div>
         <div className='app-text'>
@@ -102,7 +121,7 @@ const Applications = () => {
       <div className="app-container">
         <div className='app-img'>
           <a href="https://github.com/team-tauros/doodle-society-1" target="_blank" rel="noopener noreferrer">
-            <img src={laptop} className='img' alt='laptop'></img>
+            <img src="https://dummyimage.com/600x400/000/fff.jpg&text=Doodle+Society" className='img' alt='Doodle Society'></img>
           </a>
         </div>
         <div className='app-text'>
@@ -124,12 +143,12 @@ const Applications = () => {
       <div className="app-container">
         <div className='app-img'>
           <a href="https://github.com/team-tauros/Howdy" target="_blank" rel="noopener noreferrer">
-            <img src={laptop} className='img' alt='laptop'></img>
+            <img src={howdy} className='img' alt='Howdy'></img>
           </a>
         </div>
         <div className='app-text'>
           <h3 style={{margin: '5px'}}>Howdy</h3>
-          <h4>A web application for throwing virtual parties</h4>
+          <h4>A web application for throwing virtual parties with your neighbors</h4>
           <p style={{margin: '20px 5px 0px 5px'}}>
             Features: Geolocation, Google Authentication, Live Messaging,
             Game ("Who Am I?"), & Creating a Party
