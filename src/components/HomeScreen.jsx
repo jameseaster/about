@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import background from '../images/Home_Screen_Background.jpeg';
 import background_mobile from '../images/Mobile_Home_Screen_Background.jpeg';
 
@@ -20,7 +21,7 @@ const HomeScreenStyle = styled.div`
   padding: 50px;
   border-radius: 4px;
   margin-left: 250px;
-  border: 1px solid #F7882F;
+  border: 1px solid #fff;
 }
 
 @media (max-width: 768px) {
