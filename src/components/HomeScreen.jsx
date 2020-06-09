@@ -18,8 +18,9 @@ const HomeScreenStyle = styled.div`
   text-align: left;
   background-color: rgba(0, 0, 0, 0.3);
   padding: 50px;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-left: 250px;
+  border: 1px solid #F7882F;
 }
 
 @media (max-width: 768px) {
@@ -32,10 +33,12 @@ const HomeScreenStyle = styled.div`
     background-color: rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin-top: 100px;
-    border-radius: 0px;
     margin-left: 0px;
     width: 100vw;
     height: auto;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
   }
 }
 `
@@ -46,7 +49,7 @@ const HomeScreen = () => {
       <div className='text-container'>
         <h1>James Easter</h1>
         <h2>software engineer</h2>
-        <p>I'm a creative, adaptable workhorse</p>
+        <p>I'm a creative, adaptable workhorse.</p>
       </div>
     </HomeScreenStyle>
   )

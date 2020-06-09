@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import laptop from '../images/coffee.jpeg'
+import laptop from '../images/computer.jpeg'
 
 const AboutStyle = styled.div`
   display: flex;
@@ -9,26 +9,30 @@ const AboutStyle = styled.div`
   align-items: center;
   justify-content: center;
   text-align: left;
-  background-color: teal;
-  @media screen
-    and (min-device-width: 1200px)
-    and (max-device-width: 1600px) {
-    min-height: 100vh;
-  }
+  background-color: #6B7A8F;
+  padding-left: 10px;
+  padding-right: 10px;
   color: #fff;
-  padding-left: 100px;
-  padding-right: 100px;
+
+  @media (min-width: 969px) {
+    min-height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 
   .title {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     @media (max-width: 969px) {
-      padding: 50px;
+      padding-top: 50px;
+      padding-bottom: 10px;
     }
   }
 
   .subtitle {
     min-width: 300px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .body-container {
@@ -37,6 +41,10 @@ const AboutStyle = styled.div`
     align-items: center;
     justify-content: center;
     text-align: left;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+
     @media (max-width: 969px) {
       flex-direction: column;
       display: flex;
@@ -49,6 +57,7 @@ const AboutStyle = styled.div`
 
   .container-left {
     flex: 2;
+
     @media (min-width: 969px) {
       padding-left: 50px;
       padding-right: 50px;
@@ -62,6 +71,7 @@ const AboutStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
     @media (max-width: 969px) {
       padding: 0px 0px 50px 0px;
     }
@@ -75,26 +85,29 @@ const AboutStyle = styled.div`
 
   .tech-container {
     flex: 1;
+    margin-top: 10px;
     min-width: 390px;
     flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+    font-size: smaller;
   }
 
   .img {
     width: 350px;
+    border-radius: 5px;
   }
 `
 
 const About = () => {
   return (
     <AboutStyle id="about" >
-      <h3 className='title'>About</h3>
-      <h4  className='subtitle'>
+      <h3 className='title'>ABOUT</h3>
+      <h5  className='subtitle'>
         Hello! I am a software engineer based in New Orleans, LA.
-      </h4>
+      </h5>
       <div className="body-container">
         <div className="container-left">
           <div className='paragraph-container'>
@@ -117,12 +130,12 @@ const About = () => {
         <img src={laptop} className='img' alt='laptop'></img>
         </div>
       </div>
-        <div className='tech-container'>
-            <h4>Technologies</h4>
+        {/* <div className='tech-container'>
+            <h4>Recent Technologies</h4>
           <p>React · React Native · Redux · Socket.IO · GoogleAuth</p>
           <p>Node.js · Feathers · Express · MariaDB · MongoDB</p>
           <p>JavaScript · HTML · CSS · AWS · Heroku</p>
-          </div>
+          </div> */}
     </AboutStyle>
   )
 }

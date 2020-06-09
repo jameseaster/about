@@ -28,7 +28,7 @@ const Ul = styled.ul`
   }
 
   .active {
-    border: 1px solid #fff;
+    border: 1px solid #F7882F;
     padding: 4px;
     border-radius: 2px;
   }

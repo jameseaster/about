@@ -47,7 +47,7 @@ const ApplicationsStyle = styled.div`
     justify-content: center;
     margin: 10%;
     @media (min-width: 969px) {
-      margin: 5% 0% 5% 10%;
+      margin: 5% 10% 5% 0%;
     }
     a {
       text-decoration: none;
@@ -65,7 +65,7 @@ const ApplicationsStyle = styled.div`
     align-items: center;
     justify-content: center;
     @media (min-width: 969px) {
-      padding: 5% 10% 5% 0%;
+      padding: 5% 0% 5% 10%;
     }
   }
   .app-img:hover {
@@ -78,6 +78,11 @@ const Applications = () => {
     <ApplicationsStyle id="applications" >
       <h3 className='header'>Applications</h3>
       <div className="app-container">
+        <div className='app-img'>
+          <a href="https://github.com/Team-GreenDev/flourish" target="_blank" rel="noopener noreferrer">
+            <img src={laptop} className='img' alt='laptop'></img>
+          </a>
+        </div>
         <div className='app-text'>
           <h3 style={{margin: '5px'}}>Flourish</h3>
           <h4>A mobile application for the plant-owning community.</h4>
@@ -93,13 +98,13 @@ const Applications = () => {
             <p style={{margin: '20px 5px 0px 5px'}}>code on github</p>
           </a>
         </div>
+      </div>
+      <div className="app-container">
         <div className='app-img'>
-          <a href="https://github.com/Team-GreenDev/flourish" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/team-tauros/doodle-society-1" target="_blank" rel="noopener noreferrer">
             <img src={laptop} className='img' alt='laptop'></img>
           </a>
         </div>
-      </div>
-      <div className="app-container">
         <div className='app-text'>
           <h3 style={{margin: '5px'}}>Doodle Society</h3>
           <h4>A web application to share doodles.</h4>
@@ -115,13 +120,13 @@ const Applications = () => {
             <p style={{margin: '20px 5px 0px 5px'}}>code on github</p>
           </a>
         </div>
+      </div>
+      <div className="app-container">
         <div className='app-img'>
-          <a href="https://github.com/team-tauros/doodle-society-1" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/team-tauros/Howdy" target="_blank" rel="noopener noreferrer">
             <img src={laptop} className='img' alt='laptop'></img>
           </a>
         </div>
-      </div>
-      <div className="app-container">
         <div className='app-text'>
           <h3 style={{margin: '5px'}}>Howdy</h3>
           <h4>A web application for throwing virtual parties</h4>
@@ -135,11 +140,6 @@ const Applications = () => {
           </p>
           <a href="https://github.com/team-tauros/Howdy" target="_blank" rel="noopener noreferrer">
             <p style={{margin: '20px 5px 0px 5px'}}>code on github</p>
-          </a>
-        </div>
-        <div className='app-img'>
-          <a href="https://github.com/team-tauros/Howdy" target="_blank" rel="noopener noreferrer">
-            <img src={laptop} className='img' alt='laptop'></img>
           </a>
         </div>
       </div>

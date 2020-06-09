@@ -50,7 +50,7 @@ const ContactStyle = styled.div`
     background-color: rgba(0,0,0,0.4);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #fff;
+    border: 1px solid #F7882F;
 
     @media (min-width: 969px) {
       width: 100%;
@@ -77,7 +77,7 @@ const Contact = () => {
   return (
     <ContactStyle id='contact' >
       <div className='container'>
-      <h3 className='header'>Contact</h3>
+      <h3 className='header'>CONTACT</h3>
       <div className="body-container">
         <div className='app-text'>
           <p style={{marginBottom: '20px'}}>
