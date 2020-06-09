@@ -50,7 +50,7 @@ const ContactStyle = styled.div`
     background-color: rgba(0,0,0,0.4);
     padding: 20px;
     border-radius: 8px;
-    border: 1px solid #F7882F;
+    border: 1px solid #fff;
 
     @media (min-width: 969px) {
       width: 100%;
@@ -69,6 +69,7 @@ const ContactStyle = styled.div`
     justify-content: center;
     align-items: center;
     text-align: center;
+    border-top: 1px solid #F7882F;
   }
 `
 
