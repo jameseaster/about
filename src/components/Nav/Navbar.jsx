@@ -2,10 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import Burger from './Burger';
 
-import dev from '../../images/dev.png';
-import codewars from '../../images/codewars.png';
-import github from '../../images/github.png';
-import linkedin from '../../images/linkedin.png';
+import dev from '../../images/icons/dev.png';
+import codewars from '../../images/icons/codewars.png';
+import github from '../../images/icons/github.png';
+import linkedin from '../../images/icons/linkedin.png';
 
 const Nav = styled.nav`
   position: fixed;
