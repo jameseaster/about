@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/about/static/js/main.b2424a93.chunk.js",
-    "main.js.map": "/about/static/js/main.b2424a93.chunk.js.map",
+    "main.js": "/about/static/js/main.3f229450.chunk.js",
+    "main.js.map": "/about/static/js/main.3f229450.chunk.js.map",
     "runtime-main.js": "/about/static/js/runtime-main.5937b91c.js",
     "runtime-main.js.map": "/about/static/js/runtime-main.5937b91c.js.map",
     "static/js/2.50092dbb.chunk.js": "/about/static/js/2.50092dbb.chunk.js",
     "static/js/2.50092dbb.chunk.js.map": "/about/static/js/2.50092dbb.chunk.js.map",
     "index.html": "/about/index.html",
-    "precache-manifest.cca4a4e23ede9471939a4cc7eec694e1.js": "/about/precache-manifest.cca4a4e23ede9471939a4cc7eec694e1.js",
+    "precache-manifest.448bfa2c773e7919dbc6974ee187f145.js": "/about/precache-manifest.448bfa2c773e7919dbc6974ee187f145.js",
     "service-worker.js": "/about/service-worker.js",
     "static/js/2.50092dbb.chunk.js.LICENSE.txt": "/about/static/js/2.50092dbb.chunk.js.LICENSE.txt",
     "static/media/Home_Screen_Background.jpeg": "/about/static/media/Home_Screen_Background.ed44d494.jpeg",
@@ -29,6 +29,6 @@
   "entrypoints": [
     "static/js/runtime-main.5937b91c.js",
     "static/js/2.50092dbb.chunk.js",
-    "static/js/main.b2424a93.chunk.js"
+    "static/js/main.3f229450.chunk.js"
   ]
 }
