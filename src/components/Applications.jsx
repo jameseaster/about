@@ -121,7 +121,7 @@ const Applications = () => {
       </div>
       <div className="app-container">
         <div className='app-img'>
-          <a href="https://github.com/team-tauros/doodle-society-1" target="_blank" rel="noopener noreferrer">
+          <a href="https://youtu.be/RrTmyRj_7aw" target="_blank" rel="noopener noreferrer">
             <img src={doodle} className='img' alt='Doodle Society'></img>
           </a>
         </div>
@@ -143,7 +143,7 @@ const Applications = () => {
       </div>
       <div className="app-container">
         <div className='app-img'>
-          <a href="https://github.com/team-tauros/Howdy" target="_blank" rel="noopener noreferrer">
+          <a href="https://youtu.be/wAt3b_yNUwU" target="_blank" rel="noopener noreferrer">
             <img src={howdy} className='img' alt='Howdy'></img>
           </a>
         </div>
