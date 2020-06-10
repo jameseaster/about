@@ -1,8 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import howdy from '../images/howdy/howdy_1.png';
 import flourish from '../images/flourish/flourish_1.PNG';
+import doodle from '../images/doodle/doodle_1.png';
+import howdy from '../images/howdy/howdy_1.png';
 
 const ApplicationsStyle = styled.div`
   display: flex;
@@ -121,7 +122,7 @@ const Applications = () => {
       <div className="app-container">
         <div className='app-img'>
           <a href="https://github.com/team-tauros/doodle-society-1" target="_blank" rel="noopener noreferrer">
-            <img src="https://dummyimage.com/600x400/000/fff.jpg&text=Doodle+Society" className='img' alt='Doodle Society'></img>
+            <img src={doodle} className='img' alt='Doodle Society'></img>
           </a>
         </div>
         <div className='app-text'>
