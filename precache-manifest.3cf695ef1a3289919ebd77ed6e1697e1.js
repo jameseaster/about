@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "78f0e955d22b810cc0fdf71d444e4e58",
+    "revision": "2fa669d9fe8b6eb04345142418d6884e",
     "url": "/about/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/about/static/js/2.50092dbb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b68999b85d16bb972d02",
-    "url": "/about/static/js/main.3f229450.chunk.js"
+    "revision": "1dca907ca4f667bca368",
+    "url": "/about/static/js/main.3dfce6e6.chunk.js"
   },
   {
     "revision": "bf01e481d54f70cc4f78",
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/about/static/media/Mobile_Home_Screen_Background.49830250.jpeg"
   },
   {
-    "revision": "e6a77f27bd0ed006c3f2a6f7d4ee1845",
-    "url": "/about/static/media/Resume.e6a77f27.pdf"
+    "revision": "2f8f5448ed194ef8a01b62124cec1dea",
+    "url": "/about/static/media/Resume.2f8f5448.pdf"
   },
   {
     "revision": "0c33df503e2375754c7edcdda95fb08e",
