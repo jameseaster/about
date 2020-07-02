@@ -4,7 +4,7 @@ import styled from "styled-components";
 import flourish from "../images/flourish/flourish_1.PNG";
 import doodle from "../images/doodle/doodle_1.png";
 import howdy from "../images/howdy/howdy_1.png";
-import algo from "../images/Algo-Visualizer.png";
+import algo from "../images/algo-visualizer.png";
 
 const ApplicationsStyle = styled.div`
   display: flex;
@@ -95,7 +95,35 @@ const ApplicationsStyle = styled.div`
 const Applications = () => {
   return (
     <ApplicationsStyle id="applications">
-      <h3 className="header">Applications</h3>
+      <h3 className="header">Recent Projects</h3>
+      <div className="app-container">
+        <div className="app-img">
+          <a
+            href="https://jameseaster.github.io/algo-visualization/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={algo} className="img" alt="Algo-Visualizer"></img>
+          </a>
+        </div>
+        <div className="app-text">
+          <h3 style={{ margin: "5px" }}>Algo-Visualizer</h3>
+          <h4>A web application visualize sorting algorithms</h4>
+          <p style={{ margin: "20px 5px 0px 5px" }}>
+            Features: Depicts six different sorting algorithms, and utilizes
+            asynchronous code to visual their differences in efficiency and
+            execution
+          </p>
+          <p style={{ margin: "20px 5px 0px 5px" }}>Tech Stack: Vue.js, ES8+</p>
+          <a
+            href="https://github.com/jameseaster/algo-visualization"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p style={{ margin: "20px 5px 0px 5px" }}>code on github</p>
+          </a>
+        </div>
+      </div>
       <div className="app-container">
         <div className="app-img">
           <a
@@ -119,33 +147,6 @@ const Applications = () => {
           </p>
           <a
             href="https://github.com/Team-GreenDev/flourish"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <p style={{ margin: "20px 5px 0px 5px" }}>code on github</p>
-          </a>
-        </div>
-      </div>
-      <div className="app-container">
-        <div className="app-img">
-          <a
-            href="https://jameseaster.github.io/algo-visualization/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={algo} className="img" alt="Algo-Visualizer"></img>
-          </a>
-        </div>
-        <div className="app-text">
-          <h3 style={{ margin: "5px" }}>Algo-Visualizer</h3>
-          <h4>A web application visualize sorting algorithms</h4>
-          <p style={{ margin: "20px 5px 0px 5px" }}>
-            Features: Depicts five different sorting algorithms, visualizing
-            their efficiency and execution
-          </p>
-          <p style={{ margin: "20px 5px 0px 5px" }}>Tech Stack: Vue.js</p>
-          <a
-            href="https://github.com/jameseaster/algo-visualization"
             target="_blank"
             rel="noopener noreferrer"
           >
