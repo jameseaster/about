@@ -1,20 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import redux from '../images/tech/redux.png';
-import expo from '../images/tech/expo.png';
-import feathersjs from '../images/tech/feathersjs.png';
-import JS_HTML_CSS from '../images/tech/JS_HTML_CSS.png';
-import mariadb from '../images/tech/mariadb.png';
-import nodejs from '../images/tech/nodejs.png';
-import react from '../images/tech/react.png';
+import redux from "../images/tech/redux.png";
+import expo from "../images/tech/expo.png";
+import feathersjs from "../images/tech/feathersjs.png";
+import JS_HTML_CSS from "../images/tech/JS_HTML_CSS.png";
+import mariadb from "../images/tech/mariadb.png";
+import nodejs from "../images/tech/nodejs.png";
+import react from "../images/tech/react.png";
 
 const AboutStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #6B7A8F;
+  background-color: #6b7a8f;
   padding-left: 10px;
   padding-right: 10px;
   color: #fff;
@@ -54,11 +54,10 @@ const AboutStyle = styled.div`
     min-width: 325px;
   }
 
-
   .section-img {
-  @media (max-width: 700px) {
-    max-width: 350px;
-  }
+    @media (max-width: 700px) {
+      max-width: 350px;
+    }
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,43 +72,45 @@ const AboutStyle = styled.div`
   .nodejs {
     height: 80px;
   }
-`
+`;
 
 const About = () => {
   return (
-    <AboutStyle id="about" >
-      <div className='header'>
-        <h3 className='title'>ABOUT</h3>
-        <h4  className='subtitle'>
+    <AboutStyle id="about">
+      <div className="header">
+        <h3 className="title">ABOUT</h3>
+        <h4 className="subtitle">
           Hello! I am a software engineer based in New Orleans, LA.
         </h4>
-        </div>
-      <div className='section'>
+      </div>
+      <div className="section">
         <p>
           I love developing applications that solve problems for other people.
-          I’m always interested in diving into new software engineering technologies
-          that allow for more efficient and effective work flow.
+          I’m always interested and diving into new software engineering
+          technologies that allow for more efficient and effective work flow.
         </p>
       </div>
       <div className="section-img">
-        <img src={JS_HTML_CSS} alt="JS_HTML_CSS"/>
-        <img src={react} alt="react"/>
-        <img src={nodejs} alt="nodejs" className="nodejs"/>
-        <img src={redux} alt="redux"/>
-        <img src={mariadb} alt="mariadb"/>
-        <img src={feathersjs} alt="feathersjs"/>
-        <img src={expo} alt="expo"/>
+        <img src={JS_HTML_CSS} alt="JS_HTML_CSS" />
+        <img src={react} alt="react" />
+        <img src={nodejs} alt="nodejs" className="nodejs" />
+        <img src={redux} alt="redux" />
+        <img src={mariadb} alt="mariadb" />
+        <img src={feathersjs} alt="feathersjs" />
+        <img src={expo} alt="expo" />
       </div>
-      <div className='section'>
+      <div className="section">
         <p>
           Recently, I have been working in JavaScript specifically utilizing
-          React Native & Redux to build mobile applications. I see both mobile and
-          web applications as an awesome opportunity to connect with people and
-          add value to their daily life.
+          Vue.js, React, React Native, TypeScript, & Node.js/Express building
+          desktop and mobile web applications. I see both mobile and desktop web
+          applications as an awesome opportunity to connect with people and add
+          value to their daily life.
         </p>
       </div>
+      {/* <button>Resume PDF</button> */}
     </AboutStyle>
-  )
-}
+  );
+};
 
-export default About
+export default About;
