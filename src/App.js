@@ -4,6 +4,7 @@ import HomeScreen from "./components/HomeScreen";
 import About from "./components/About";
 import ProjectList from "./components/ProjectList";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 const App = () => (
   <div className="App">
@@ -12,6 +13,7 @@ const App = () => (
     <About />
     <ProjectList />
     <Contact />
+    <Footer />
   </div>
 );
 
