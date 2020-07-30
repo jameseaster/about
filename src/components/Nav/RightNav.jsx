@@ -1,14 +1,14 @@
-import React from 'react'
-import styled from 'styled-components';
-import { Link } from "react-scroll";
+import React from "react";
+import styled from "styled-components";
 
-import PDF from '../../images/Resume.pdf'
+import RightNavLink from "./RightNavLink";
+import pdf from "../../images/Resume.pdf";
 
 const Ul = styled.ul`
   flex-flow: column nowrap;
-  background-color: #0D2538;
+  background-color: #0d2538;
   position: fixed;
-  transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
   height: 100vh;
@@ -28,63 +28,20 @@ const Ul = styled.ul`
   }
 
   .active {
-    border: 1px solid #F7882F;
+    border: 1px solid #f7882f;
     padding: 4px;
     border-radius: 2px;
   }
-`
-const RightNav = ({ open, closeDrawer }) => {
-  return (
-    <Ul open={open}>
-      <li>
-        <Link
-          activeClass="active"
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-          onClick={closeDrawer}
-        >Home</Link>
-      </li>
-      <li>
-        <Link
-          activeClass="active"
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onClick={closeDrawer}
-        >About</Link>
-      </li>
-      <li>
-        <Link
-          activeClass="active"
-          to="applications"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onClick={closeDrawer}
-        >Applications</Link>
-      </li>
-      <li>
-        <Link
-          activeClass="active"
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-          onClick={closeDrawer}
-        >Contact</Link>
-      </li>
-      <li>
-        <a href = {PDF} target = "_blank" className="resume" rel="noopener noreferrer">Resume</a>
-      </li>
-    </Ul>
-  )
-}
+`;
 
-export default RightNav
+const RightNav = ({ open, closeDrawer }) => (
+  <Ul open={open}>
+    <RightNavLink close={closeDrawer} title={"Home"} offset={0} />
+    <RightNavLink close={closeDrawer} title={"About"} offset={0} />
+    <RightNavLink close={closeDrawer} title={"Projects"} offset={-20} />
+    <RightNavLink close={closeDrawer} title={"Contact"} offset={-20} />
+    <RightNavLink pdf={pdf} title={"Resume"} />
+  </Ul>
+);
+
+export default RightNav;
