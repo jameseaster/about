@@ -1,11 +1,9 @@
-import React from 'react'
-import styled from 'styled-components';
-import Burger from './Burger';
+import React from "react";
+import styled from "styled-components";
+import Burger from "./Burger";
 
-import dev from '../../images/icons/dev.png';
-import codewars from '../../images/icons/codewars.png';
-import github from '../../images/icons/github.png';
-import linkedin from '../../images/icons/linkedin.png';
+import { iconList } from "../../data/IconInfo";
+import Icon from "./Icon";
 
 const Nav = styled.nav`
   position: fixed;
@@ -26,36 +24,17 @@ const Nav = styled.nav`
   img: hover {
     transform: scale(1.1, 1.1);
   }
+`;
 
-  /* this might be good to use for the icons */
-  /* list-style: none;
-  display: flex;
-  flex-flow: row nowrap;
+const Navbar = () => (
+  <Nav>
+    <div className="icon-container">
+      {iconList.map((icon) => (
+        <Icon url={icon.url} img={icon.img} style={icon.style} />
+      ))}
+    </div>
+    <Burger />
+  </Nav>
+);
 
-  li {
-    padding: 18px 10px;
-  } */
-`
-const Navbar = () => {
-  return (
-    <Nav>
-      <div className="icon-container">
-        <a href="https://dev.to/jameseaster" target="_blank" rel="noopener noreferrer">
-          <img src={dev} alt="dev" style={{height: '38px', marginRight: '15px'}}/>
-        </a>
-        <a href="https://www.codewars.com/users/jameseaster" target="_blank" rel="noopener noreferrer">
-          <img src={codewars} alt="codewars" style={{height: '34px', marginRight: '15px', marginBottom: '2px', padding: 3, backgroundColor: '#A8332A', borderRadius: '5px'}}/>
-        </a>
-        <a href="https://www.linkedin.com/in/jameseaster-dev/" target="_blank" rel="noopener noreferrer">
-          <img src={linkedin} alt="linkedin" style={{height: '34px', marginRight: '15px', marginBottom: '2px'}}/>
-        </a>
-        <a href="https://github.com/jameseaster" target="_blank" rel="noopener noreferrer">
-          <img src={github} alt="github" style={{height: '39.4px', marginRight: '15px', marginBottom: '-0.7px'}}/>
-        </a>
-      </div>
-      <Burger />
-    </Nav>
-  )
-}
-
-export default Navbar
+export default Navbar;
