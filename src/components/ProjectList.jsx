@@ -11,6 +11,9 @@ const ProjectListStyle = styled.div`
   justify-content: center;
   text-align: left;
   background-color: #404040;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
   @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
     min-height: 100vh;
   }

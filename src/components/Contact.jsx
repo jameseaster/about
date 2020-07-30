@@ -27,6 +27,7 @@ const ContactStyle = styled.div`
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 30px;
   }
 
   .header {
@@ -57,20 +58,6 @@ const ContactStyle = styled.div`
       margin: 5%;
     }
   }
-  .extra-space {
-    flex-grow: 3;
-  }
-  .footer {
-    flex: 0.5;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-top: 1px solid #f7882f;
-  }
 `;
 
 const Contact = () => (
@@ -84,10 +71,6 @@ const Contact = () => (
           </p>
           <h4>james.m.easter@gmail.com</h4>
         </div>
-      </div>
-      <div className="extra-space"></div>
-      <div className="footer">
-        <p>built & designed by James Easter</p>
       </div>
     </div>
   </ContactStyle>

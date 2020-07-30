@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const RightNavLink = ({ title, close, pdf, offset }) => {
+const RightNavLink = ({ title, close, pdf }) => {
   return (
     <li>
       {pdf ? (
@@ -19,7 +19,7 @@ const RightNavLink = ({ title, close, pdf, offset }) => {
           to={title}
           spy={true}
           smooth={true}
-          offset={offset}
+          offset={0}
           duration={500}
           onClick={close}
         >

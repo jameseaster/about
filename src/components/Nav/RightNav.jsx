@@ -36,10 +36,10 @@ const Ul = styled.ul`
 
 const RightNav = ({ open, closeDrawer }) => (
   <Ul open={open}>
-    <RightNavLink close={closeDrawer} title={"Home"} offset={0} />
-    <RightNavLink close={closeDrawer} title={"About"} offset={0} />
-    <RightNavLink close={closeDrawer} title={"Projects"} offset={-20} />
-    <RightNavLink close={closeDrawer} title={"Contact"} offset={-20} />
+    <RightNavLink close={closeDrawer} title={"Home"} />
+    <RightNavLink close={closeDrawer} title={"About"} />
+    <RightNavLink close={closeDrawer} title={"Projects"} />
+    <RightNavLink close={closeDrawer} title={"Contact"} />
     <RightNavLink pdf={pdf} title={"Resume"} />
   </Ul>
 );

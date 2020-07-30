@@ -19,6 +19,8 @@ const AboutStyle = styled.div`
   padding-right: 10px;
   color: #fff;
   min-height: 100vh;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   @media (min-width: 969px) {
     padding-left: 100px;
@@ -50,7 +52,6 @@ const AboutStyle = styled.div`
 
   .header {
     max-width: 600;
-    margin-top: 20px;
     margin-bottom: 0px;
     min-width: 325px;
   }
