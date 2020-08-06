@@ -1,20 +1,20 @@
-import algo from "../images/algo-visualizer.png";
+import sorting from "../images/sorting-visualizer.png";
 import flourish from "../images/flourish/flourish_1.PNG";
 import doodle from "../images/doodle/doodle_1.png";
 import howdy from "../images/howdy/howdy_1.png";
 
 export const projectList = [
   {
-    link: "https://jameseaster.github.io/algo-visualization/",
-    img: algo,
+    link: "https://jameseaster.github.io/sorting-visualizer/",
+    img: sorting,
     style: "img",
-    title: "Algo-Visualizer",
+    title: "Sorting-Visualizer",
     subtitle: "A web application visualize sorting algorithms",
     features: `Features: Depicts six different sorting algorithms, and utilizes
 asynchronous code to visual their differences in efficiency and
 execution`,
-    techStack: "Tech Stack: Vue.js, ES8+",
-    github: "https://github.com/jameseaster/algo-visualization",
+    techStack: "Tech Stack: Vue.js, Bootstrap Vue, Vuetify, ES8+",
+    github: "https://github.com/jameseaster/sorting-visualizer",
   },
   {
     link: "https://youtu.be/K9k9t54Spxc",
