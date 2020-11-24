@@ -1,7 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
 
-const RightNavLink = ({ title, close, pdf }) => {
+interface Props {
+  title: string;
+  close?: () => void;
+  pdf?: string; // Works because of global.d.ts file?
+}
+const RightNavLink = ({ title, close, pdf }: Props) => {
   return (
     <li>
       {pdf ? (

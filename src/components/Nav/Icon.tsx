@@ -1,6 +1,12 @@
-import React from "react";
+import * as React from "react";
 
-const Icon = ({ url, img, style }) => {
+interface Props {
+  url: string,
+  img: string,
+  style: object,
+}
+
+const Icon = ({ url, img, style }: Props) => {
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
       <img src={img} alt="icon" style={style} />
