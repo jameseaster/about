@@ -1,6 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
+interface Props {
+  link: string;
+  title: string;
+  img: string;
+  style: string;
+  subtitle: string;
+  features: string;
+  techStack: string;
+  github: string;
+}
+
 const ProjectListItemStyle = styled.div`
   .app-container {
     flex-direction: row;
@@ -71,6 +82,14 @@ const ProjectListItemStyle = styled.div`
   .app-img:hover {
     filter: brightness(50%);
   }
+
+  .p_margin {
+    margin: 20px 5px 0px 5px;
+  }
+
+  .titleMargin {
+    margin: 5px;
+  }
 `;
 
 const ProjectListItem = ({
@@ -82,21 +101,21 @@ const ProjectListItem = ({
   features,
   techStack,
   github,
-}) => (
+}: Props) => (
   <ProjectListItemStyle>
     <div className="app-container">
       <div className="app-img">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <img src={img} className={style} alt="application"></img>
+          <img src={img} className={style} alt="application" />
         </a>
       </div>
       <div className="app-text">
-        <h3 style={{ margin: "5px" }}>{title}</h3>
+        <h3 className="titleMargin">{title}</h3>
         <h4>{subtitle}</h4>
-        <p style={{ margin: "20px 5px 0px 5px" }}>{features}</p>
-        <p style={{ margin: "20px 5px 0px 5px" }}>{techStack}</p>
+        <p className="p_margin">{features}</p>
+        <p className="p_margin">{techStack}</p>
         <a href={github} target="_blank" rel="noopener noreferrer">
-          <p style={{ margin: "20px 5px 0px 5px" }}>code on github</p>
+          <p className="p_margin">code on github</p>
         </a>
       </div>
     </div>
