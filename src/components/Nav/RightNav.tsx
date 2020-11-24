@@ -1,10 +1,18 @@
 import React from "react";
 import styled from "styled-components";
-
 import RightNavLink from "./RightNavLink";
 import pdf from "../../images/Resume.pdf";
 
-const Ul = styled.ul`
+interface Props {
+  open: boolean;
+  closeDrawer: () => void;
+}
+
+type UlProps = {
+  open: boolean;
+};
+
+const Ul = styled.ul<UlProps>`
   flex-flow: column nowrap;
   background-color: #0d2538;
   position: fixed;
@@ -34,7 +42,7 @@ const Ul = styled.ul`
   }
 `;
 
-const RightNav = ({ open, closeDrawer }) => (
+const RightNav = ({ open, closeDrawer }: Props) => (
   <Ul open={open}>
     <RightNavLink close={closeDrawer} title={"Home"} />
     <RightNavLink close={closeDrawer} title={"About"} />
