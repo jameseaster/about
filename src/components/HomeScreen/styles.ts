@@ -1,10 +1,8 @@
-import React from "react";
 import styled from "styled-components";
+import background from "../../images/generalAssets/Home_Screen_Background.jpeg";
+import background_mobile from "../../images/generalAssets/Mobile_Home_Screen_Background.jpeg";
 
-import background from "../images/Home_Screen_Background.jpeg";
-import background_mobile from "../images/Mobile_Home_Screen_Background.jpeg";
-
-const HomeScreenStyle = styled.div`
+export const HomeScreenStyle = styled.div<{}>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,15 +41,3 @@ const HomeScreenStyle = styled.div`
     }
   }
 `;
-
-const HomeScreen = () => (
-  <HomeScreenStyle id="Home">
-    <div className="text-container">
-      <h1>James Easter</h1>
-      <h2>software engineer</h2>
-      <p>I'm a creative, adaptable workhorse.</p>
-    </div>
-  </HomeScreenStyle>
-);
-
-export default HomeScreen;

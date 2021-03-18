@@ -1,12 +1,10 @@
-import React, { useState } from "react";
 import styled from "styled-components";
-import RightNav from "./RightNav";
 
 type StyledBurgerProps = {
   open: boolean;
 };
 
-const StyledBurger = styled.div<StyledBurgerProps>`
+export const StyledBurger = styled.div<StyledBurgerProps>`
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -40,26 +38,3 @@ const StyledBurger = styled.div<StyledBurgerProps>`
     }
   }
 `;
-
-const Burger = () => {
-  const [open, setOpen] = useState<boolean>(false);
-
-  const closeDrawer = () => {
-    setTimeout(() => setOpen(false), 650);
-  };
-
-  const handleClick = () => setOpen(!open);
-
-  return (
-    <>
-      <StyledBurger open={open} onClick={handleClick}>
-        <div />
-        <div />
-        <div />
-      </StyledBurger>
-      <RightNav open={open} closeDrawer={closeDrawer} />
-    </>
-  );
-};
-
-export default Burger;

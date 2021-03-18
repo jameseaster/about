@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 
-const FooterStyle = styled.div`
+export const FooterStyle = styled.div<{}>`
   background-color: #fff;
   color: #333;
   text-align: center;
@@ -12,13 +11,3 @@ const FooterStyle = styled.div`
     padding-bottom: 10px;
   }
 `;
-
-const Footer = () => {
-  return (
-    <FooterStyle>
-      <p>built & designed by James Easter</p>
-    </FooterStyle>
-  );
-};
-
-export default Footer;
