@@ -11,7 +11,7 @@ import { RightNavProps } from "./types";
 import { RightNavLink } from "../RightNavLink";
 
 // Image Imports
-import pdf from "../../../images/generalAssets/Resume.pdf";
+import pdf from "../../../assets/other/Resume.pdf";
 
 /**
  * RightNav

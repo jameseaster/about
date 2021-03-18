@@ -1,8 +1,8 @@
 // Image Imports
-import dev from "../images/icons/dev.png";
-import github from "../images/icons/github.png";
-import codewars from "../images/icons/codewars.png";
-import linkedin from "../images/icons/linkedin.png";
+import dev from "../assets/icons/dev.png";
+import github from "../assets/icons/github.png";
+import codewars from "../assets/icons/codewars.png";
+import linkedin from "../assets/icons/linkedin.png";
 
 // Icon list data
 export const iconData = [
