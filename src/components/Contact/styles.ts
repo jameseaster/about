@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
-import background from "../images/Home_Screen_Background.jpeg";
-import background_mobile from "../images/Mobile_Home_Screen_Background.jpeg";
+import background from "../../images/generalAssets/Home_Screen_Background.jpeg";
+import background_mobile from "../../images/generalAssets/Mobile_Home_Screen_Background.jpeg";
 
-const ContactStyle = styled.div`
+export const ContactStyle = styled.div<{}>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,21 +58,3 @@ const ContactStyle = styled.div`
     }
   }
 `;
-
-const Contact = () => (
-  <ContactStyle id="Contact">
-    <div className="container">
-      <h3 className="header">CONTACT</h3>
-      <div className="body-container">
-        <div className="app-text">
-          <p style={{ marginBottom: "20px" }}>
-            I would love to hear from you, send me an email & stay in touch!
-          </p>
-          <h4>james.m.easter@gmail.com</h4>
-        </div>
-      </div>
-    </div>
-  </ContactStyle>
-);
-
-export default Contact;

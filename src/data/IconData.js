@@ -1,9 +1,11 @@
+// Image Imports
 import dev from "../images/icons/dev.png";
-import codewars from "../images/icons/codewars.png";
 import github from "../images/icons/github.png";
+import codewars from "../images/icons/codewars.png";
 import linkedin from "../images/icons/linkedin.png";
 
-export const iconList = [
+// Icon list data
+export const iconData = [
   {
     url: "https://dev.to/jameseaster",
     img: dev,
