@@ -5,13 +5,13 @@ import React from "react";
 import { AboutStyle } from "./styles";
 
 // Image Imports
-import expo from "../../images/tech/expo.png";
-import redux from "../../images/tech/redux.png";
-import react from "../../images/tech/react.png";
-import nodejs from "../../images/tech/nodejs.png";
-import mariadb from "../../images/tech/mariadb.png";
-import feathersjs from "../../images/tech/feathersjs.png";
-import JS_HTML_CSS from "../../images/tech/JS_HTML_CSS.png";
+import expo from "../../assets/tech/expo.png";
+import redux from "../../assets/tech/redux.png";
+import react from "../../assets/tech/react.png";
+import nodejs from "../../assets/tech/nodejs.png";
+import mariadb from "../../assets/tech/mariadb.png";
+import feathersjs from "../../assets/tech/feathersjs.png";
+import JS_HTML_CSS from "../../assets/tech/JS_HTML_CSS.png";
 
 /**
  * About

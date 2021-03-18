@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import background from "../../images/generalAssets/Home_Screen_Background.jpeg";
-import background_mobile from "../../images/generalAssets/Mobile_Home_Screen_Background.jpeg";
+import background from "../../assets/other/Home_Screen_Background.jpeg";
+import background_mobile from "../../assets/other/Mobile_Home_Screen_Background.jpeg";
 
 export const ContactStyle = styled.div<{}>`
   display: flex;

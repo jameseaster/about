@@ -1,8 +1,8 @@
 // Image Imports
-import howdy from "../images/howdy/howdy_1.png";
-import doodle from "../images/doodle/doodle_1.png";
+import howdy from "../assets/howdy/howdy_1.png";
+import doodle from "../assets/doodle/doodle_1.png";
 import flourish from "../assets/flourish/flourish_1.PNG";
-import sorting from "../images/generalAssets/sorting-visualizer.png";
+import sorting from "../assets/other/sorting-visualizer.png";
 
 // Project List Data
 export const projectData = [
