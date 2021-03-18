@@ -1,9 +1,11 @@
-import sorting from "../images/sorting-visualizer.png";
-import flourish from "../images/flourish/flourish_1.PNG";
-import doodle from "../images/doodle/doodle_1.png";
+// Image Imports
 import howdy from "../images/howdy/howdy_1.png";
+import doodle from "../images/doodle/doodle_1.png";
+import flourish from "../assets/flourish/flourish_1.PNG";
+import sorting from "../images/generalAssets/sorting-visualizer.png";
 
-export const projectList = [
+// Project List Data
+export const projectData = [
   {
     link: "https://jameseaster.github.io/sorting-visualizer/",
     img: sorting,
